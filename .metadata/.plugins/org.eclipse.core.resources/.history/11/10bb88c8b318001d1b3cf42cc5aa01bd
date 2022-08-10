@@ -1,0 +1,11 @@
+package com.devsuperior.uri2621.projections;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.devsuperior.uri2621.entities.Product;
+
+public interface ProductMinProjection extends JpaRepository<Product, Long> {
+
+	String getName();
+	
+}
